@@ -1,0 +1,102 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.certificado-container {
+  background-color: #111;
+  border-radius: 16px;
+  padding: 40px 60px;
+  width: 800px;
+  max-width: 100%;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.certificado-container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #9f44d3, #2b9bf4);
+  z-index: -1;
+}
+
+.linha {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ddd;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.nome-destacado {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e67e22;
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+.linha-pequena {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.linha-pequena span {
+  margin: 0 5px;
+}
+
+.assinatura {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 0.5rem;
+}
+
+.assinatura p:last-child {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+#baixar {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#baixar:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+#baixar:active {
+  background-color: #3e8e41;
+  transform: scale(0.98);
+}

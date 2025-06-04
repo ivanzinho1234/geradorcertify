@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+  <div class="form-container">
+    <header class="header">
+    <a hrf="#" class="logo">
+    <img src="../img/icons8-fatia-de-bolo-48.png" alt="logo"> 
+     <h1>littlecakecertify</h1> 
+    <form onsubmit="salvarDados(); return false;">
+      <label>Nome completo</label>
+      <input type="text" id="nome" placeholder="João da Silva" required>
+
+      <label>Curso / Evento</label>
+      <input type="text" id="curso" placeholder="HTML e CSS para Iniciantes" required>
+
+      <label>Carga horária</label>
+      <input type="text" id="carga" placeholder="Ex: 46 horas" required>
+
+      <label>Data de início</label>
+      <input type="date" id="dataInicio" required>
+
+      <label>Data de término</label>
+      <input type="date" id="dataFim" required>
+
+      <button type="submit">Gerar Certificado</button>
+    </form>
+  </div>
+
+  <script src="../script/scriptcadastro.js"></script>
+
+</body>
+</html>
